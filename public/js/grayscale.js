@@ -4,14 +4,7 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-// jQuery to collapse the navbar on scroll
-$(window).scroll(function() {
-    if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
-    } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-    }
-});
+
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
@@ -38,14 +31,14 @@ function init() {
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
-        zoom: 15,
+        zoom: 6,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(40.6700, -73.9400), // New York
+        center: new google.maps.LatLng(23.2167, 72.6833), // Gujarat
 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
-        scrollwheel: false,
+        scrollwheel: true,
         draggable: false,
 
         // How you would like to style the map. 
@@ -169,7 +162,7 @@ function init() {
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
     var image = 'img/map-marker.png';
-    var myLatLng = new google.maps.LatLng(40.6700, -73.9400);
+    var myLatLng = new google.maps.LatLng(21.5200, 70.4700);
     var beachMarker = new google.maps.Marker({
         position: myLatLng,
         map: map,
